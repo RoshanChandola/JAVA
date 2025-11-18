@@ -56,14 +56,14 @@ public class Doubly_LL {
         {
             return;
         }
-        if(temp.next!=null)
-        {
-            temp.prev.next=temp.next;
-            temp.next.prev=temp.prev;
-        }
-        if(temp.prev!=null)
+        if(temp.next==null)
         {
             temp.prev.next=null;
+            return;
+        }
+        else{
+            temp.prev.next=temp.next;
+            temp.next.prev=temp.prev;
         }
     }
     void display()
@@ -80,6 +80,8 @@ public class Doubly_LL {
         Doubly_LL dll=new Doubly_LL();
         dll.Insert_end(10);
         dll.Insert_end(20);
+         dll.Insert_end(30);
+          dll.Insert_end(65);
         dll.insert_front(5);
         dll.display();
         dll.delete_end(20);
