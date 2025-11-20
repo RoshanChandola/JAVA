@@ -1,0 +1,1 @@
+  System.out.println("Height of tree = " + height(root));
