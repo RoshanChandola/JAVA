@@ -1,15 +1,16 @@
-class Node{
-    int val;
-    Node next;
-    Node prev;
-    Node(int val)
-    {
-        this.val=val;
-        this.next=null;
-        this.prev=null;
-    }
-}
+
 public class Doubly_LL {
+    class Node{
+            int val;
+            Node next;
+            Node prev;
+            Node(int val)
+            {
+                this.val=val;
+                this.next=null;
+                this.prev=null;
+            }
+    }
     Node head=null;
     void Insert_end(int val)
     {

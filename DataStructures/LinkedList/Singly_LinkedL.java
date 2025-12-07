@@ -1,13 +1,14 @@
-class Node{
-    int val;
-    Node next;
-    Node(int val)
-    {
-        this.val=val;
-        this.next=null;
-    }
-}
+
 class Singly_LinkedL{
+    class Node{
+        int val;
+        Node next;
+        Node(int val)
+        {
+            this.val=val;
+            this.next=null;
+        }
+   }
     Node head=null;
     void end(int val)
     {

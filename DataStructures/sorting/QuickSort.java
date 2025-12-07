@@ -12,6 +12,7 @@ public class QuickSort {
             if (i < j) {
                 swap(arr, i, j);
             }
+            
         }
 
         // place pivot in correct position
