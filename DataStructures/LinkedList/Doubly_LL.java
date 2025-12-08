@@ -38,7 +38,7 @@ public class Doubly_LL {
         head.prev=newnode;
         head=newnode;
     }
-    void delete_end(int key)
+    void delete(int key)
     {
         Node temp=head;
         if(head.val==key)
@@ -85,7 +85,7 @@ public class Doubly_LL {
           dll.Insert_end(65);
         dll.insert_front(5);
         dll.display();
-        dll.delete_end(20);
+        dll.delete(20);
         dll.display();
     }
 }
