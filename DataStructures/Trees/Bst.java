@@ -131,7 +131,7 @@ class Bst {
         // Search an element
         int keyToSearch = 4;
         System.out.println("\n\nSearching " + keyToSearch + ": " +
-                           (tree.search(tree.root, keyToSearch) ? "Found" : "Not Found"));
+        (tree.search(tree.root, keyToSearch) ? "Found" : "Not Found"));
 
         // Delete an element
         int keyToDelete = 10;

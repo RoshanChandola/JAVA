@@ -1,33 +1,29 @@
-public class InsertionSort {
-    
-    void insertionSort(int arr[]) {
+class Main {
+
+    static void insertionSort(int[] arr) {
         int n = arr.length;
 
-        for (int i = 1; i < n; i++) {
-            int key = arr[i];
-            int j = i - 1;
+        for (int i = 0; i < n; i++) {
+            int j = i;
 
-            // Move elements that are greater than key one position ahead
-            while (j >= 0 && arr[j] > key) {
-                arr[j + 1] = arr[j];
+            while (j > 0 && arr[j] < arr[j - 1]) {
+                // swap adjacent elements
+                int temp = arr[j];
+                arr[j] = arr[j - 1];
+                arr[j - 1] = temp;
+
                 j--;
             }
-
-            arr[j + 1] = key; // Insert key into correct position
         }
     }
 
     public static void main(String[] args) {
+        int[] arr = {7, 5, 9, 1, 3};
 
-        int arr[] = { 12, 11, 13, 5, 6 };
+        insertionSort(arr);
 
-        InsertionSort is = new InsertionSort();
-        is.insertionSort(arr);
-
-        System.out.println("Sorted array:");
         for (int x : arr) {
             System.out.print(x + " ");
         }
     }
-
 }
