@@ -66,7 +66,7 @@ public class Circular_Queue {
 
         cq.display();
         cq.peek();
-        // cq.dequeue();
+        cq.dequeue();
         cq.display();
     }
 }
