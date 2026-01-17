@@ -10,6 +10,7 @@ class BinaryTree {
         this.left = null;
         this.right = null;
     }
+
     static TreeNode create() {
         TreeNode root = null;
         System.out.println("Enter node value (-1 for null): ");
@@ -24,6 +25,7 @@ class BinaryTree {
         root.right = create();
         return root;       
     }
+
 }
 class InorderTraversal {
     List<Integer> result = new ArrayList<>();
@@ -36,4 +38,14 @@ class InorderTraversal {
         inorderTraversal(root.right);  
         return result;
     }
+    public static void main(String[] args) {
+        System.out.println("Create the binary tree:");
+        TreeNode root = TreeNode.create();
+        InorderTraversal traversal = new InorderTraversal();
+        List<Integer> inorderList = traversal.inorderTraversal(root);
+        System.out.println("Inorder Traversal: " + inorderList);
+    }
+
 }
+}
+
