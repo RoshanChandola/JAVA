@@ -34,4 +34,11 @@ class SelectionSort {
         }
     }
 }
-
+// time Complexity: O(n^2)
+// Space Complexity: O(1)
+//best case: O(n^2)
+//average case: O(n^2)
+//worst case: O(n^2)
+// in-place sorting algorithm : meaning it requires a constant amount O(1) of additional memory space
+// not a stable sorting algorithm
+//stable meaning that the relative order of equal elements is preserved

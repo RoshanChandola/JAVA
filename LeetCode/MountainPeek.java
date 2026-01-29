@@ -19,7 +19,7 @@ public class MountainPeek {
     }
     public static void main(String[] args) {
         MountainPeek mp = new MountainPeek();
-        int nums[] = {1,2,14,12,11,10,8,7,6,4};
+        int nums[] = {1,4,2,14,12,11,10,8,7,6,4};
         int peakIndex = mp.findPeakElement(nums);
         System.out.println("Peak element index: " + peakIndex);
     }

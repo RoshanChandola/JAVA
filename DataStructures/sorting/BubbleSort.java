@@ -33,3 +33,8 @@ class BubbleSort {
 }
 // Time Complexity: O(n^2)
 // Space Complexity: O(1)
+// Best Case: O(n) (when the array is already sorted)
+// Average Case: O(n^2)
+// Worst Case: O(n^2) (when the array is sorted in reverse order)
+// In-place sorting algorithm
+// Stable sorting algorithm (preserves the relative order of equal elements)
