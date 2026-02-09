@@ -62,3 +62,15 @@ class KthLargestOptimized {
         System.out.println(k + "th largest element is " + result);
     }
 }*/
+//because minheap stores the smallest element at the top, we maintain a min heap of size k to keep track of the k largest elements seen so far. Whenever the size of the heap exceeds k, we remove the smallest element (the root of the min heap). At the end, the root of the min heap will be the kth largest element in the array. This approach has a time complexity of O(n log k) and a space complexity of O(k).
+
+//dry run for optimized code
+// Input: arr = [12, 3, 5, 7, 19], k = 4
+// Output: 5    
+// Explanation:
+// We initialize an empty min heap.
+// We iterate through the array:
+// num = 12: Add 12 to the min heap => minHeap = [12]
+// num = 3: Add 3 to the min heap => minHeap = [3, 12]
+// num = 5: Add 5 to the min heap => minHeap = [3, 12, 5]
+// num = 7: Add 7 to the min heap => minHeap = [3, 7, 5, 12]; size exceeds k, remove the smallest element (3) => minHeap = [5, 7, 12]

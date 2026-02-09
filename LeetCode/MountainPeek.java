@@ -24,3 +24,5 @@ public class MountainPeek {
         System.out.println("Peak element index: " + peakIndex);
     }
 }
+// what does peak mean? peak means the element which is greater than its both side elements
+// for eg: in the array {1,4,2,14,12,11} , 4 is peak because it is greater than 1 and 2 similarly 14 is also peak because it is greater than 2 and 12
