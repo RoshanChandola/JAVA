@@ -1,27 +1,26 @@
+package Searching;
 
-public class BinarySearch {
+public class BinarySearchWhile {
     static void binarySearch(int arr[],int left ,int right,int key)
     {
-        int mid=(right+left)/2;
-        if (left>right)
+        while(left<=right)
         {
-            System.out.println("element not found");
-            return;
-        }
-        else if(arr[mid]==key)
+            int mid=(right+left)/2;
+            if(arr[mid]==key)
             {
                 System.out.println("element found at index: "+mid);
+                return;
             }
-        else if(key<arr[mid])
+            else if(key<arr[mid])
             {
-
-            binarySearch(arr,left,mid-1, key);
+                right=mid-1;
             }
-        else if(key >arr[mid])
+            else if(key >arr[mid])
             {   
-            binarySearch(arr,mid+1,right,key);
+                left=mid+1;
             }
-        
+        }
+        System.out.println("element not found");
     }
     public static void main(String[] args) {
         int arr[]={-10,20,30,40,50};
@@ -30,5 +29,4 @@ public class BinarySearch {
         int right=arr.length-1;
         binarySearch(arr,left,right,key);
     }
-    
 }

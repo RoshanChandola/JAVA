@@ -1,10 +1,10 @@
 class MergeSort {
 
     // Function to merge two sorted halves
-    void merge(int arr[], int left, int mid, int right) {
+    void merge(int arr[], int left, int mid, int right) {// n = 6, left = 0, mid = 2, right = 5
 
-        int n1 = mid - left + 1;
-        int n2 = right - mid;
+        int n1 = mid - left + 1;// n1 = 3
+        int n2 = right - mid;// n2 = 3
 
         int L[] = new int[n1];
         int R[] = new int[n2];
@@ -61,7 +61,7 @@ class MergeSort {
     // Main method
     public static void main(String[] args) {
 
-        int arr[] = {12, 11, 13, 5, 6, 7};
+        int arr[] = {12, 11, 13, 5, 6, 7};// n = 6
 
         MergeSort ms = new MergeSort();
         ms.mergeSort(arr, 0, arr.length - 1);

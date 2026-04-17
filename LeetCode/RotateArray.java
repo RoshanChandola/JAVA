@@ -23,3 +23,4 @@ public class RotateArray {
         }
     }
 }
+//for left rotation, we can use the same approach but change the index calculation to (i - k + n) % n.

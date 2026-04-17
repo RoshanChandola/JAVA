@@ -8,8 +8,8 @@ class ListNode {
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
 
-class Solution {
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+public class MergeTwoSortedLists {
+    public static  ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null) return l2;
         if (l2 == null) return l1;
 
@@ -22,14 +22,12 @@ class Solution {
         }
 
     }
-}
-public class MergeSortedList {
     public static void main(String[] args) {
         // Example usage:
         ListNode l1 = new ListNode(1, new ListNode(3, new ListNode(5)));
         ListNode l2 = new ListNode(2, new ListNode(4, new ListNode(6)));
-        Solution solution = new Solution();
-        ListNode mergedList = solution.mergeTwoLists(l1, l2);
+        
+        ListNode mergedList = mergeTwoLists(l1, l2);
 
         // Print merged list
         ListNode current = mergedList;
@@ -37,5 +35,5 @@ public class MergeSortedList {
             System.out.print(current.val + " ");
             current = current.next;
         }
-    }
+    
 }

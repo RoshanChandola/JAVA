@@ -1,14 +1,13 @@
 public class QuickSort {
 
-    static int partition(int[] arr, int low, int high) {
-        int pivot = arr[low];
+    static int partition(int[] arr, int low, int high) {//array: [34, 7, 23, 32, 5, 62], low: 0, high: 5
+        int pivot = arr[low];// pivot: 34
         int i = low;
         int j = high;
 
         while (i < j) {
-            while (arr[i] <= pivot && i < high) i++;
+            while (arr[i] <= pivot && i < high) i++; 
             while (arr[j] > pivot && j > low) j--;
-
             if (i < j) {
                 swap(arr, i, j);
             }
@@ -45,3 +44,4 @@ public class QuickSort {
         }
     }
 }
+// for 
