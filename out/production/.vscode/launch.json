@@ -6,13 +6,6 @@
     "configurations": [
         {
             "type": "java",
-            "name": "BinaryTree",
-            "request": "launch",
-            "mainClass": "AdvDS.BinaryTree.BinaryTree",
-            "projectName": "JAVA_a7bfff5c"
-        },
-        {
-            "type": "java",
             "name": "Bst",
             "request": "launch",
             "mainClass": "Trees.Bst",

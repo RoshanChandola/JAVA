@@ -1,5 +1,6 @@
-import java.util.*;
+package Trees;
 
+import java.util.*;
 class Bst {
 
     // Node structure

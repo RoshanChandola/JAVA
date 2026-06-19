@@ -6,8 +6,8 @@ public class QuickSort {
         int j = high;
 
         while (i < j) {
-            while (arr[i] <= pivot && i < high) i++; 
-            while (arr[j] > pivot && j > low) j--;
+            while (arr[i] <= pivot && i < high) i++; // find element greater than pivot: i will stop at 62
+            while (arr[j] > pivot && j > low) j--; // find element less than or equal to pivot: j will stop at 5
             if (i < j) {
                 swap(arr, i, j);
             }
@@ -41,7 +41,6 @@ public class QuickSort {
         System.out.println("Sorted array:");
         for (int num : arr) {
             System.out.print(num + " ");
-        }
+        } 
     }
 }
-// for 

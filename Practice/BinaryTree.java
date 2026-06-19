@@ -1,3 +1,4 @@
+package java.practice;
 import java.util.Scanner;
 class Node{
     int val;

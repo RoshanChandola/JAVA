@@ -1,3 +1,4 @@
+package java.practice;
 class Node
 {
     int val;
